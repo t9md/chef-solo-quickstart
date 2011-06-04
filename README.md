@@ -129,6 +129,7 @@ chef-solo/roles/test.rb
 * [ChefSolo](http://wiki.opscode.com/display/chef/Chef+Solo)
 
 * [Attribute](http://wiki.opscode.com/display/chef/Attributes)
+
 いろいろなところで参照する変数みたいなもん。
 Attributes は様々なレベルで設定される。
 
@@ -140,9 +141,11 @@ Attributes は様々なレベルで設定される。
 * [Nodes](http://wiki.opscode.com/display/chef/Nodes)
 
 * [Resources](http://wiki.opscode.com/display/chef/Resources)
+
 Resources は Puppet で言う Type みたいなもの。インフラを記述する基本単位。これが　Chef DSLの超ベースの部分。
 
 * [Recipes](http://wiki.opscode.com/display/chef/Recipes)
+
 レシピは関係性の深い定義をセットにしたもの。Pupppet のモジュールに対応する。
 例えば、apache のレシピでは、apache の package のインストールや、 httpd.conf の template(=httpd.conf.erb)、その  
 template の中で使われる属性値(=Attribute)のファイルが下記のような感じで配置される。
@@ -152,6 +155,7 @@ template の中で使われる属性値(=Attribute)のファイルが下記の�
     apache/templates/default/httpd.conf.erb
 
 * [Cookbooks](http://wiki.opscode.com/display/chef/Cookbooks)
+
 Cookbook は Recipe を集めたもの。つまりレシピ集。
 
 * [ Anatomy of Chef Run ](http://wiki.opscode.com/display/chef/Anatomy+of+a+Chef+Run)
