@@ -13,6 +13,7 @@ Vagrant で壊してもいい仮想マシンを用意する。
     chef-solo -c ~/solo.rb -j node.json
 
 chef-solo のオプションはそれぞれ下記の通り。
+
     -c, --config CONFIG
     -j, --json-attributes JSON_ATTRIBS
     -r, --recipe-url RECIPE_URL
