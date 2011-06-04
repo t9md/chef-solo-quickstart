@@ -1,0 +1,6 @@
+CHEF_QS_ROOT="/root"
+file_cache_path "#{CHEF_QS_ROOT}/chef-solo"
+cookbook_path   "#{CHEF_QS_ROOT}/chef-solo/cookbooks"
+#json_attribs    "http://localhost:8000/node.json"
+#recipe_url      "http://localhost:8000/chef-solo.tgz"
+role_path       "#{CHEF_QS_ROOT}/chef-solo/roles"
