@@ -62,7 +62,7 @@ chef-solo のオプションはそれぞれ下記の通り。
     mkdir -p chef-solo/cookbooks/main/recipes
     vim chef-solo/cookbooks/main/recipes/default.rb
 
-* chef-solo/cookbooks/main/recipes/default.rb
+chef-solo/cookbooks/main/recipes/default.rb
 
     directory "/this/is/very/nested/directory" do
       owner "root"
@@ -116,7 +116,7 @@ Role を作ってみる。
     mkdir chef-solo/roles
     vim chef-solo/roles/test.rb
 
-* chef-solo/roles/test.rb
+chef-solo/roles/test.rb
 
     name 'test'
     description 'This is just a test role, no big deal.'
