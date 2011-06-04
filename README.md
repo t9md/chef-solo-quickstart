@@ -148,6 +148,7 @@ Resources は Puppet で言う Type みたいなもの。インフラを記述�
 例えば、apache のレシピでは、apache の package のインストールや、 httpd.conf の template(=httpd.conf.erb)、その  
 template の中で使われる属性値(=Attribute)のファイルが下記のような感じで配置される。
 
+
     apache2/attributes/default.rb
     apache/recipes/default.rb
     apache/templates/default/httpd.conf.erb
