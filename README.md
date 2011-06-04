@@ -38,8 +38,7 @@ chef-solo のオプションはそれぞれ下記の通り。
 
 ### cookbook を配置しておく。
 
-`solo.rb`で指定した、`cookbook_path` ディレクトリ配下に、cookbook を配置し  
-ておく。
+`solo.rb`で指定した、`cookbook_path` ディレクトリ配下に、cookbook を配置しておく。
 今回は、resolver を使用するので、resolver を配置しておく。
 
     git clone https://github.com/opscode/cookbooks.git opscode-cookbooks
@@ -54,7 +53,7 @@ chef-solo のオプションはそれぞれ下記の通り。
     [Sat, 04 Jun 2011 03:22:13 -0700] INFO: cleaning the checksum cache
     [Sat, 04 Jun 2011 03:22:13 -0700] INFO: Running report handlers
     [Sat, 04 Jun 2011 03:22:13 -0700] INFO: Report handlers complete
-    vagrant  ~ # 
+    vagrant  ~ #
 
 
 自分で、cookbook を作ってみる。
@@ -65,7 +64,7 @@ chef-solo のオプションはそれぞれ下記の通り。
 
 * chef-solo/cookbooks/main/recipes/default.rb
 
-    directory "/this/is/very/nested/directory" do                                                                                                                                                                        
+    directory "/this/is/very/nested/directory" do
       owner "root"
       group "root"
       recursive true
@@ -79,11 +78,12 @@ chef-solo のオプションはそれぞれ下記の通り。
 
 オプションなしで(つまり `chef-solo` だけで)同じことができる様にする。
 ----------------------------------
+オプションを指定せず、`chef-solo`を実行しても、さっきの `chef-solo -c solo.rb -j node.json` と同じ事ができるようにしてみる。
 
     mkdir /root/wwwroot
     mv node.json wwwroot
     cd chef-solo
-    tar czf ../wwwroot/chef-solo.tgz cookbooks 
+    tar czf ../wwwroot/chef-solo.tgz cookbooks
     cd ../
     rm -rf chef-solo
 
@@ -118,7 +118,7 @@ Role を作ってみる。
 
 * chef-solo/roles/test.rb
 
-    name 'test'                                                                                                                                                                                                          
+    name 'test'
     description 'This is just a test role, no big deal.'
     run_list(
       'recipe[main]'
