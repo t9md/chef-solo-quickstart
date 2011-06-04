@@ -131,6 +131,7 @@ chef-solo/roles/test.rb
 * [Attribute](http://wiki.opscode.com/display/chef/Attributes)  
 いろいろなところで参照する変数みたいなもん。
 Attributes は様々なレベルで設定される。
+
   * cookbooks
   * environments (Chef 0.10.0 or above only)
   * roles
